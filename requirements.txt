@@ -1,6 +1,5 @@
 BeautifulSoup==3.2.1
 Flask==0.10.1
-Glances==1.7.7
 Jinja2==2.7.3
 MarkupSafe==0.23
 Pillow==2.5.0
