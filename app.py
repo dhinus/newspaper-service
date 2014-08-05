@@ -17,7 +17,7 @@ def article():
     article = Article(url=url)
     article.download()
     article.parse()
-    # article.nlp()
+    article.nlp()
     return jsonify(url=url,
                    title=article.title,
                    authors=article.authors,
@@ -26,7 +26,8 @@ def article():
                    image=article.top_image,
                    images=article.images,
                    videos=article.movies,
-                   published=article.published_date)
+                   published=article.published_date,
+                   meta=article.meta_data)
 
 if __name__ == '__main__':
     app.run(debug=True)

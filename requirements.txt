@@ -9,7 +9,7 @@ cssselect==0.9.1
 gunicorn==19.0.0
 itsdangerous==0.24
 lxml==3.3.5
-newspaper==0.0.7
+-e /Users/karl/dev/newspaper
 nltk==2.0.4
 requests==2.3.0
 simplejson==3.5.3
