@@ -17,7 +17,7 @@ def article():
     article = Article(url=url)
     article.download()
     article.parse()
-    article.nlp()
+    # article.nlp()
     return jsonify(url=url,
                    title=article.title,
                    authors=article.authors,
