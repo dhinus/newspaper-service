@@ -9,7 +9,7 @@ cssselect==0.9.1
 gunicorn==19.0.0
 itsdangerous==0.24
 lxml==3.3.5
--e git+https://github.com/codelucas/newspaper.git#egg=newspaper
+-e git+git://github.com/karls/newspaper.git@extraction-improvements#egg=newspaper
 nltk==2.0.4
 requests==2.3.0
 simplejson==3.5.3

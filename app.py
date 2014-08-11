@@ -5,12 +5,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "Hello world"
+    return "Go to /api/article/?url=<url> to do some extractin'"
 
 @app.route("/api/article")
 def article():
     url = request.args.get('url')
-    print url
     if url is None:
         return "Please provide the url (?url=[your url])"
 
