@@ -23,8 +23,8 @@ def article():
                    description=article.meta_description,
                    body=article.text,
                    image=article.top_image,
-                   images=article.images,
-                   images_sizes=article.image_sizes,
+                   # images=article.images,
+                   images=article.image_sizes,
                    videos=article.movies,
                    published=article.published_date,
                    meta=article.meta_data)
