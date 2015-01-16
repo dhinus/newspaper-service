@@ -2,7 +2,9 @@ from flask import Flask, request, jsonify
 from newspaper import Article
 from multiprocessing import Pool
 
-image_processing_pool = Pool(8)
+pool_size = 16
+image_processing_pool = Pool(pool_size)
+print "Using pool size of %d" % pool_size
 
 app = Flask(__name__)
 app.debug = True
