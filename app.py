@@ -1,5 +1,8 @@
 from flask import Flask, request, jsonify
 from newspaper import Article
+from multiprocessing import Pool
+
+image_processing_pool = Pool(8)
 
 app = Flask(__name__)
 app.debug = True
@@ -14,7 +17,7 @@ def article():
     if url is None:
         return "Please provide the url (?url=[your url])"
 
-    article = Article(url=url)
+    article = Article(url=url, pool=image_processing_pool)
     article.download()
     article.parse()
     # article.nlp()
