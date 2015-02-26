@@ -4,7 +4,6 @@ from newspaper import Article
 from multiprocessing import Pool
 
 app = Flask(__name__)
-app.debug = True
 
 @app.route("/")
 def index():
@@ -29,4 +28,4 @@ def article():
                    meta=article.meta_data)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
